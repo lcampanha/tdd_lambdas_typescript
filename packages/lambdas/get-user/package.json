@@ -1,0 +1,16 @@
+{
+  "name": "@lambdas_tdd/get-user",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "aws-lambda": "1.0.6",
+    "@lambdas_tdd/uc-get-user": "1.0.0"
+  },
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc -p tsconfig.json"
+  }
+}

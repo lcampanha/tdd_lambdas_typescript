@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "noEmit": false,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "composite": true,
+      "strictPropertyInitialization": false /* Enable strict checking of property initialization in classes. */,
+      "strict": true /* Enable all strict type-checking options. */,
+      "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
+      "declaration": true,
+      "declarationMap": true,
+      "emitDecoratorMetadata": true,
+      /* Experimental Options */
+      "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+
+      /* Advanced Options */
+      "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  
+    }
+  }

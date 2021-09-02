@@ -1,0 +1,52 @@
+# OS-specific files
+.DS_Store
+
+# NodeJS-specific files
+node_modules
+.npmrc
+
+# project files
+junit.xml
+coverage
+/deploy.yaml
+
+# Other files
+*.log
+
+# Environment variables
+.env
+.env-*
+
+# Build directory
+dist
+lib
+.build
+
+# CACHE
+.yarn-offline-mirror
+.yarn-cache
+
+packages/private
+packages/**/*/.yarnrc
+packages/**/*/.npmrc
+packages/**/*/yarn.lock
+
+.dockerignore*
+*.tar*
+
+tsconfig.tsbuildinfo
+
+packages/**/*/dist
+packages/**/*/node_modules
+packages/**/*/tsconfig.tsbuildinfo
+dist
+
+tsconfig.tsbuildinfo
+
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
+.eslintcache

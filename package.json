@@ -1,0 +1,17 @@
+{
+  "name": "lambdas_tdd",
+  "private": true,
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "devDependencies": {
+    "lerna": "4.0.0"
+  },
+  "dependencies": {
+    "typescript": "4.4.2"
+  },
+  "scripts": {	
+    "build": "./node_modules/lerna/cli.js exec -- yarn build",
+    "install-all": "./node_modules/lerna/cli.js exec -- yarn install"
+  }
+}
