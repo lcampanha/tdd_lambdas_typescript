@@ -1,0 +1,24 @@
+{
+  "name": "@lambdas_tdd/deploy-lambdas",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "1.121.0",
+    "@aws-cdk/core": "1.121.0"
+  },
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc -p tsconfig.json",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "diff": "cdk diff",
+    "install-layer": "sh scripts/install-dependencies.sh"
+  },
+  "devDependencies": {
+    "aws-cdk": "^1.121.0"
+  },
+  "resolutions": {
+    "ieee754": "1.1.13",
+    "sax": "1.2.1"
+  }
+}
