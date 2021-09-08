@@ -1,0 +1,23 @@
+{
+  "name": "@lambdas_tdd/user-dao",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pg": "8.7.1",
+    "reflect-metadata": "0.1.13",
+    "typeorm": "0.2.37"
+  },
+  "devDependencies": {
+    "@types/node": "16.7.13"
+  },
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc -p tsconfig.json",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "typeorm-init": "typeorm init --name user-dao --database postgres",
+    "start": "ts-node src/index.ts"
+  }
+}
