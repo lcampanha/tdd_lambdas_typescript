@@ -5,7 +5,7 @@
       "outDir": "dist",
       "baseUrl": "./",
       "paths": {
-          "@lambdas_tdd/uc-get-user": ["../../use-cases/get-user/src"]
+          "/opt/nodejs/*": ["../../*"]
         }
     },
     "include": ["src/**/*"],
