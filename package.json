@@ -2,17 +2,24 @@
   "name": "lambdas_tdd",
   "private": true,
   "workspaces": [
-    "packages/infra/**/*",
-    "packages/use-cases/**/*",  
-    "packages/lambdas/**/*"
+    "packages/**"
   ],
   "devDependencies": {
-    "lerna": "4.0.0"
-  },
-  "dependencies": {
-    "typescript": "4.4.2"
+    "@types/node": "10.17.27",
+    "lerna": "^4.0.0",
+    "ts-node": "^9.0.0",
+    "duplicate-package-checker-webpack-plugin": "3.0.0",
+    "ts-loader": "9.2.5",
+    "webpack": "5.51.1",
+    "webpack-cli": "4.8.0",
+    "zip-webpack-plugin": "4.0.1",
+    "typescript": "4.2.4"
   },
   "scripts": {	
-        "build": "yarn workspaces run build"
+    "build": "yarn workspaces run build",
+    "lerna:update:dependencies": "./node_modules/.bin/lerna bootstrap",
+    "build:webpack": "./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production --context ",
+    "build:lerna": "lerna run build:webpack:lambda"
+  
   }
 }

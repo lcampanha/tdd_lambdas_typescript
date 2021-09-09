@@ -1,4 +1,4 @@
-import { GetUserUC } from '@lambdas_tdd/uc-get-user';
+import { GetUserUC } from 'uc-get-user';
 
 export class GetUserHandler {
     private readonly getUserUC: GetUserUC;

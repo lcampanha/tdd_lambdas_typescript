@@ -1,13 +1,14 @@
 {
-  "name": "@lambdas_tdd/uc-get-user",
+  "name": "uc-get-user",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/uc-get-user.js",
+  "private": true,
   "files": [
-    "dist"
+    "src"
   ],
 
   "scripts": {
-    "build": "../../../node_modules/.bin/tsc -p tsconfig.json"
+    "build": "../../../node_modules/.bin/tsc -p ../../../tsconfig.json"
   }
 }

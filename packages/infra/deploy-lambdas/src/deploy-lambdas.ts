@@ -7,18 +7,10 @@ export class DeployLambdas extends Stack  {
 
         console.log('Deploying Get User lambda stack..');
 
-        const dependenciesLayer = new LayerVersion(this, "GetUsersDependenciesLayer", {
-            code: Code.fromAsset('lambda-layer'),            
-            compatibleRuntimes: [Runtime.NODEJS_14_X]
-          });
-
-          console.log('dependenciesLayer', dependenciesLayer);
-
         new Function(this, "GetUser", {
             code: Code.fromAsset("../../lambdas/get-user/dist"),
             functionName: "GetUser",
             handler: "app.handler",
-            layers: [dependenciesLayer],
             runtime: Runtime.NODEJS_14_X
         });
 

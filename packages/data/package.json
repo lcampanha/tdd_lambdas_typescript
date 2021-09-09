@@ -1,9 +1,9 @@
 {
-  "name": "@lambdas_tdd/user-dao",
+  "name": "user-dao",
   "version": "1.0.0",
   "main": "dist/app.js",
   "files": [
-    "dist"
+    "src"
   ],
   "license": "MIT",
   "dependencies": {

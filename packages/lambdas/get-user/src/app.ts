@@ -1,6 +1,6 @@
 import { APIGatewayEvent, Context } from 'aws-lambda';
 import { GetUserHandler } from './handler';
-import { GetUserUC } from '/opt/nodejs/use-cases/get-user/dist/uc-get-user';
+import { GetUserUC } from 'uc-get-user';
 
 const handler = async(event: APIGatewayEvent, context: Context) => {
 
